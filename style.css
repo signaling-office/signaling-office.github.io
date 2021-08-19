@@ -6,7 +6,7 @@ header {
 }
 
 
-h1 {
+inside h1 {
     font-weight: normal;
     padding-bottom: 10px;
     text-align: center;
@@ -15,7 +15,7 @@ h1 {
     letter-spacing: 5px;
 }
  
-p {
+inside p {
     width: 50%;
     line-height: 2;
     display: inline-block;
@@ -28,7 +28,7 @@ p {
     letter-spacing: 2px;
 }
  
-a {
+inside a {
     color: #fff;
     text-decoration: none;
     background-color: #F44336;
@@ -43,7 +43,7 @@ a {
     letter-spacing: 2px;
 }
  
-h1::after {
+inside h1::after {
     content: "";
     display: block;
     border-bottom: solid 5px #2196F3;
@@ -55,21 +55,7 @@ h1::after {
     bottom: -5px;
 }
  
-html {
-    background-color: #a8e4ff;
-}
- 
-body {
-    background-color: #fff;
-    padding: 30px 30px 30px;
-    max-width: 700px;
-    margin: 20px auto;
-    box-shadow: 0px 2px 5px 0px rgba(0, 0, 0, 0.18);
-    border-radius: 3px;
-    position: relative;
-}
- 
-img {
+inside img {
     height: 300px;
     display: inline-block;
     vertical-align: top;
