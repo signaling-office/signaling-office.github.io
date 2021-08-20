@@ -2,11 +2,11 @@ header {
   margin-top:-150px;
 }
 
-#inside {
+.inside {
   margin-top:150px;
 }
 
-#inside h1 {
+.inside h1 {
     font-weight: normal;
     padding-bottom: 10px;
     text-align: center;
@@ -15,7 +15,7 @@ header {
     letter-spacing: 5px;
 }
  
-#inside p {
+.inside p {
     width: 50%;
     line-height: 2;
     display: inline-block;
@@ -28,7 +28,7 @@ header {
     letter-spacing: 2px;
 }
  
-#inside a {
+.inside a {
     color: #fff;
     text-decoration: none;
     background-color: #F44336;
@@ -43,7 +43,7 @@ header {
     letter-spacing: 2px;
 }
  
-#inside h1::after {
+.inside h1::after {
     content: "";
     display: block;
     border-bottom: solid 5px #2196F3;
@@ -55,7 +55,7 @@ header {
     bottom: -5px;
 }
  
-#inside img {
+.inside img {
     height: 300px;
     display: inline-block;
     vertical-align: top;
