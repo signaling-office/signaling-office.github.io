@@ -28,6 +28,10 @@ header .headline{
   list-style: none;
   display: inline-block;
   margin: 0 20px;
+  color: #ffffff;
+}
+.navi-list-item :hover {
+  color: #000000;
 }
 footer {
   width: 100%;
