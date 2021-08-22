@@ -1,12 +1,45 @@
-<input type="button" value="パスワードを入力して秘密のページへアクセスする" onclick="gate();">
-<script type="text/javascript">
-    function gate() {
-       var UserInput = prompt("パスワードを入力して下さい:","");
-        if ( UserInput = aiueo ) {
-           location.href ="internal.html";
+<html>
+
+<head>
+    <title>test</title>
+
+    <script type="text/javascript">
+        function disp() {
+
+            // 入力ダイアログを表示 ＋ 入力内容を pass に代入
+            pass = window.prompt("パスワードを入力してください", "");
+
+            // 入力内容が tama の場合は example_tama.html にジャンプ
+            if (pass == 'aiueo') {
+
+                location.href = "example_tama.html";
+
+            }
+
+
+            // 入力内容が一致しない場合は警告ダイアログを表示
+            else if (pass != "" && pass != null) {
+
+                window.alert(pass + 'パスワードが違います。');
+
+            }
+
+            // 空の場合やキャンセルした場合は警告ダイアログを表示
+            else {
+
+                window.alert('キャンセルされました');
+
+            }
+
         }
-        else{
-            alert("パスワードが間違っています。");
-        }
-    }
- </script>
+    </script>
+
+</head>
+
+<body>
+
+    <p><input type="button" value="入力ダイアログ" onClick="disp()"></p>
+
+</body>
+
+</html>
