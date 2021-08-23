@@ -9,7 +9,34 @@
 </head>
 <body>
 	
-	<script type="text/javascript" src="pass.js"></script>
+	<script type="text/javascript">
+
+            // 入力ダイアログを表示 ＋ 入力内容を pass に代入
+            pass = window.prompt("パスワードを入力してください", "");
+
+            // 入力内容が tama の場合は example_tama.html にジャンプ
+            if (pass == 'aiueo') {
+
+                location.href = "example_tama.html";
+
+            }
+
+
+            // 入力内容が一致しない場合は警告ダイアログを表示
+            else if (pass != "" && pass != null) {
+
+                window.alert(pass + 'パスワードが違います。');
+
+            }
+
+            // 空の場合やキャンセルした場合は警告ダイアログを表示
+            else {
+
+                window.alert('キャンセルされました');
+
+            }
+
+    </script>
 	<a href="https://www.signaling.cf/internal/" class="btn btn-border-shadow btn-border-shadow--radius">PUSH！</a>
 	
 </body>
