@@ -67,14 +67,14 @@ header {
 /*CloudRoom*/
 
 /* 画面外にいる状態 */
-#cloud-room {
+.cloud-room {
 	opacity : 0.1;
 	transform : translate(0, 50px);
 	transition : all 500ms;
 	}
 
 /* 画面内に入った状態 */
-#cloud-room.scrollin {
+.cloud-room.scrollin {
 	opacity : 1;
 	transform : translate(0, 0);
 	}
